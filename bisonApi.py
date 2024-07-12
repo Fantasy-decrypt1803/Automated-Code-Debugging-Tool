@@ -8,7 +8,7 @@ prompt=f"Debug the following code and provide suggestions for fixing errors:\n\n
 
 response=palm.chat(
        model=model_name,
-       messages [prompt]
+       messages=[{"text": prompt}]
 
 )
 
