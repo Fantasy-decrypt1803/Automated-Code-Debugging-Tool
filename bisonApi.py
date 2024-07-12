@@ -1,7 +1,8 @@
-import requests
+import streamlit as st
+import google.generativeai as palm
 
-API_KEY = 'YOUR_API_KEY_HERE'  # Replace with your actual API key
-
+palm.configure(api_key="AIzaSyC_9Y-ZWMsE6g4SdcyAygNAHRaSWnmhdzU" )
+model_name="models/chat-bison-001"
 def bison_request(code):
     try:
         response = requests.post(
