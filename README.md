@@ -14,7 +14,8 @@ This tool uses Google's PaLM Chat-Bison-001 model to provide automated debugging
     Replace "YOUR_API_KEY" in debug_utils.py with your actual API key. 
 
 3. **Run the Streamlit App**
-    ```streamlit run app.py
+    ```bash
+    streamlit run app.py
 
 4. **Enter your Python code in the text area and Click "Debug Code"**
    ```bash
