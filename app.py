@@ -1,3 +1,5 @@
+import streamlit as st
+from bison import debug_code 
 def main():
 
 st.title("BugBuster: Automated Code Debugging Tool")
@@ -50,7 +52,7 @@ if st.button("Debug Code"):
                   st.text_area("Debugging result:", debug_result, height=300) 
              except Exception as e:
                   st.error(f"Error debugging code: {e}")
-    else:
-        st.error("Please enter a code snippet.")
+     else:
+         st.error("Please enter a code snippet.")
 if name "_main_":
     main()
