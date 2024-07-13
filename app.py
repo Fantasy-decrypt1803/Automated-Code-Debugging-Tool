@@ -56,7 +56,7 @@ def main():
                 try:
                     debug_result = debug_code(code_snippet)
                     st.success("Debugging complete!")
-                    st.balloons()
+                    
                     st.text_area("Debugging result:", debug_result, height=300)
                 except Exception as e:
                     st.error(f"Error debugging code: {e}")
