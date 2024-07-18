@@ -1,9 +1,9 @@
 import google.generativeai as palm
 from google.api_core.client_options import ClientOptions
 
-api_key = "AIzaSyBpwzDczq9AHjqJfcxhJfHKbr2GNvE9ECE"  # Replace with your actual API key
+api_key = "AIzaSyBpwzDczq9AHjqJfcxhJfHKbr2GNvE9ECE" 
 palm.configure(api_key=api_key)
-model = palm.get_model("models/chat-bison-001")  # Correct model name
+model = palm.get_model("models/chat-bison-001")  
 
 def initialize_palm():
     """Initializes the PaLM Chat-Bison-001 model."""
