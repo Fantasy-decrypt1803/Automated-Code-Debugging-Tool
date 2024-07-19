@@ -62,6 +62,6 @@ def main():
                     st.error(f"Error debugging code: {e}")
         else:
             st.error("Please enter a code snippet.")
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
 
