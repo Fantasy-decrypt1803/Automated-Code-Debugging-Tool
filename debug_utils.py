@@ -14,5 +14,14 @@ def debug_code(code_snippet):
     prompt = "promptf-Debug the following code and provide suggestions for fixing errors: \n\n[code_snippet)"
     response = palm.chat(model=model,messages=[prompt])
     return response.candidates[0]["content"]
+# Example usage
+if _name_ == "_main_":
+    model = initialize_palm()
+    code_snippet = """
+    def my_function(x, y):
+        return x + y
+    """
+    debugging_output = debug_code(code_snippet)
+    print(debugging_output)
 
 
