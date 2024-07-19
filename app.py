@@ -63,5 +63,3 @@ def main():
         else:
             st.error("Please enter a code snippet.")
 
-if __name__ == "__main__":
-    main()
